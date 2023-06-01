@@ -198,12 +198,12 @@ odoo.define("DhtmlxGanttRenderer", function (require) {
 
             /* Text de l'infobulle de la task */
             this.gantt.templates.tooltip_text = function(start,end,task){
-                return "<b>toto et tutu Task:</b> "+task.text+"<br/><b>Start date:</b> " + 
+                return "<b>Task:</b> "+task.text+"<br/><b>Start date:</b> " + 
                 gantt.templates.tooltip_date_format(start)+ 
                 "<br/><b>End date:</b> "+gantt.templates.tooltip_date_format(end)+
                 "<br/><b>Progress:</b> "+task.progress+
                 "<br/>Durée: "+task.duration+
-                "<br/><div style='color:red'>Champ perso: "+task.champ_perso+"</div>";
+                "<br/><div style='color:red'>Autre: "+task.champ_perso+"</div>";
             };
 
             //Met une couleur sur les task en fonction de la priority
