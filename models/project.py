@@ -7,7 +7,7 @@ class project_task(models.Model):
     _inherit = "project.task"
 
     def get_dhtmlx(self, domain=[]):
-        tasks=self.env['project.task'].search(domain, order="name", limit=100)
+        tasks=self.env['project.task'].search(domain, order="name", limit=500)
 
         #** Ajout des projets *************************************************
         res=[]
