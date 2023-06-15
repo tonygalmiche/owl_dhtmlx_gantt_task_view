@@ -6,8 +6,7 @@
     "category" : "InfoSaône",
     "maintainer": "InfoSaône",
     "website": "http://www.infosaone.com",
-    "depends": ["base", "web","project"],
-    "depends": ["base", "web", "mail", "product","sale","project"],
+    "depends": ["project_timeline"],
     "qweb": [
         "static/src/dhtmlx_gantt_task/dhtmlx_gantt_view.xml",
     ],
